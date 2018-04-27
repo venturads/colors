@@ -1,0 +1,274 @@
+/* The animation code */
+@-webkit-keyframes slideec {
+    0% {bottom: 0;}
+    50% {bottom: 5px; }
+	100%{bottom:0;}
+}
+#d #emailcontact{
+	font-size:2em;
+}
+#emailcontact:hover{
+	background-color:lightgray;
+	color:black;
+	animation-name: slideec;
+    animation-duration: .5s;
+}
+.cont{
+	display:block;
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:700px;
+	text-align:center;
+}
+h1{
+	padding-top:100px;
+	position:relative;
+	text-align:center;
+	font-size:5em;
+}
+h2{
+	position:relative;
+	z-index:10;
+}
+#slides { 
+    position: absolute; 
+	top:0;
+	left:0;
+	z-index:-999;
+	width: 100%; 
+    height: 100%;
+	min-height:100%;
+}
+
+#slides > div{ 
+	width: 100%; 
+    height: 100%;
+    position: absolute;  
+	min-height:100%;
+}
+#slide1{
+	background-size:100% 100%;
+	background-image: url('../img/bk1.jpg');
+	background-repeat:no-repeat;
+	
+}
+#slide2{
+	background-size:100% 100%;
+	background-image: url('../img/bk2.jpg');
+	background-repeat:no-repeat;
+}
+
+img{
+	width: 100%;
+	height:100%;
+}
+#b.apps{
+	display:block;
+    width:100%;
+	height:700px;
+    left:0;
+    top:0;
+    margin: auto;
+    position: relative;
+	background-color:dodgerblue;
+}
+.apps img{
+	display:inline;
+	float:left;
+	width:25%;
+	height:25%;
+}
+#tnails img{
+	display:inline;
+	float:left;
+	width:25%;
+	height:25%;
+}
+#c{	
+	float:left;
+	text-align: left;
+    width: 100%;
+	height:700px;
+	padding-left:auto;
+	padding-right:auto;
+    position: relative;
+	background-color:darkviolet;
+	color:white;
+	font-size:20px;
+   	padding-top:100px;
+}
+.whattitle{
+	padding-left:10%
+}
+#par1{
+	padding-left:10%;
+	width:40%;
+	float:left;
+}
+.ourtitle{
+	width:40%;
+    float:right;
+}
+#par2{
+	width:40%;
+	float:right;
+	padding-right:10%;
+}
+#d{	
+	clear:both;
+	display:block;
+	height:700px;
+	position:relative;
+	background-color:white;
+	padding-top:250px;
+	padding-bottom:250px;
+	text-align:center;
+}
+#d a{
+	padding-left:auto;
+	padding-right:auto;
+	display:inline;
+    font-size: 5em;
+    color: lightgray;
+}
+a:hover{
+	opacity:.3;
+}
+a{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+.menu{
+    position: fixed;
+	width:100%;
+    z-index: 999;
+	top:0;
+}
+ul{
+	position:relative;
+	padding:0;
+}
+li{
+	position:relative;
+	left:0;
+	float:left;
+    display: block;
+    width: 25%;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+li:nth-child(1){
+    background-color:brown;
+}
+li:nth-child(2){
+    background-color:deepskyblue;
+}
+li:nth-child(3){
+    background-color:blueviolet;
+}
+li:nth-child(4){
+    background-color:dimgray;
+}
+li:nth-child(1):hover{
+    background-color: burlywood;
+    padding-bottom: 60px;
+}
+li:nth-child(2):hover{
+    background-color:dodgerblue;
+    padding-bottom: 60px;
+}
+li:nth-child(3):hover{
+    background-color:darkviolet;
+    padding-bottom: 60px;
+}
+li:nth-child(4):hover{
+    background-color:lightgray;
+    padding-bottom: 60px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	MEDIA QUERIES
+/*-----------------------------------------------------------------------------------*/
+@media screen and (max-width: 1000px) {
+    .cont{
+		height:400px;
+	}
+	li{
+		height:30px;
+	}
+	h1{
+		font-size:2em;
+	}
+	h2{
+		font-size:1.5em;
+	}
+   #tnails img{
+      width:50%;
+   }
+   .apps img{
+      width:50%;
+   }
+   #c{
+   	padding-bottom:10%;
+   	padding-top:10%;
+	}
+	#c p{
+	font-size:20px;
+}
+.whattitle{
+	padding-left:10%;
+	width:90%;
+	float:left;
+}
+#par1{
+	padding-left:10%;
+	width:90%;
+	float:left;
+}
+
+.ourtitle{
+	padding-left:10%;
+	width:90%;
+	float:left;
+}
+#par2{
+	padding-left:10%;
+	width:90%;
+	float:left;
+}
+}
+@media screen and (max-width: 500px) {
+
+   #tnails img{
+      width:100%;
+   }
+.whattitle .ourtitle{
+	float:left;
+}
+#c{
+	height:900px;
+}
+#d #emailcontact{
+	font-size:1.5em;
+}
+#d a{
+	font-size:4em;
+}
+}
